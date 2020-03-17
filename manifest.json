@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "pult",
+    "version": "0.1",
+
+    "description": "Translate novels in 'shosetsuka ni narou' into Korean. For exclusive use by stet_stet_stet.",
+
+    "icons":{
+        "48": "icons/pult48.png",
+        "96": "icons/pult96.png"
+    },
+
+    "page_action":{
+        "default_icon": "icons/pult32.png",
+        "default_title": "translate with Pult",
+        "default_popup": "popup/activate_or_revert.html",
+        "show_matches": ["*://ncode.syosetu.com/*/*/"]
+    },
+
+    "permissions":[
+        "activeTab",
+        "webRequest",
+        "storage",
+        "*://ncode.syosetu.com/*/*",
+        "*://*.stetstet.xyz/*"
+    ]
+}
